@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+</head>
+<body>
+  <input type="button" value="alert按钮" onclick="clickAlert();" />
+  <input type="button" value="print按钮" onclick="clickPrint();" />
+
+  <script type="text/javascript">
+    function clickAlert() {
+      alert('极客时间');
+    }
+
+    function clickPrint() {
+      document.getElementsByTagName('body')[0].appendChild(document.createTextNode(prompt('请随便输入点什么东西吧')));
+    }
+  </script>
+</body>
+</html>
